@@ -9,12 +9,16 @@
 \begin{figure}[t]
     \centering
     \includegraphics[clip, width=0.3\linewidth]{figures/rll_logo.png}
-    \caption{研究室ロゴ}
+    \caption{Our lab logo}
     \label{fig: our_logo}
 \end{figure}
 %%%%%%%%%%%%%%%%%
 
-この図を参照したいときは\figref{fig: our_logo}とする．図のサイズは\texttt{includegraphics[width=]}で調整できる．現状は横幅の$0.3$倍．
+{\bf 図内の文字は全て英語}にするとともに{\bf 図題も英文で記載}する．
+また，この図を参照したいときは\figref{fig: our_logo}とする．
+文頭で参照する場合は以下のようにする．
+\figureref{fig: our_logo}は文頭に参照されましたので，Fig.~ではなくFigure~になりました．\
+図のサイズは\texttt{includegraphics[width=]}で調整できる．現状は横幅の$0.3$倍．
 
 複数の図を追加したいときはこうする．
 %%%%%%%%%%%%%%%%%
@@ -23,16 +27,16 @@
   \begin{minipage}{0.49\linewidth}
     \centering
     \includegraphics[clip, trim=0 0 0 0, width=0.5\linewidth]{figures/logomark_Rnasi.png}
-    \subcaption{NAISTのロゴ}
+    \subcaption{NAIST logo}
     \label{fig: naist_logo}
   \end{minipage}
   \begin{minipage}{0.49\linewidth}
     \centering
     \includegraphics[clip, trim=0 0 0 0, width=0.5\linewidth]{figures/rll_logo.png}
-    \subcaption{ロボットラーニング研究室のロゴ}
+    \subcaption{Our lab logo}
     \label{fig: rll_logo}
   \end{minipage}
-  \caption{ロゴの比較}
+  \caption{Logo comparison}
   \label{fig: logo_comp}
 \end{figure}
 %%%%%%%%%%%%%%%%%
@@ -54,16 +58,16 @@ PDFは拡大しても画質が劣化しない．
   \begin{minipage}{0.3\linewidth}
     \centering
     \includegraphics[clip, trim=0 0 0 0, width=0.9\linewidth]{figures/hit.png}
-    \subcaption{PNG画像}
+    \subcaption{PNG}
     \label{fig: png_img}
   \end{minipage}
   \begin{minipage}{0.3\linewidth}
     \centering
     \includegraphics[clip, trim=0 0 0 0, width=0.5\linewidth]{figures/hit_converted.pdf}
-    \subcaption{PDF画像}
+    \subcaption{PDF}
     \label{fig: converted_pdf_img}
   \end{minipage}
-  \caption{PNGとPDFの比較}
+  \caption{Comparison of PNG and PDF}
   \label{fig: png_vs_pdf}
 \end{figure}
 %%%%%%%%%%%%%%%%%
@@ -71,7 +75,7 @@ PDFは拡大しても画質が劣化しない．
 \begin{figure}[t]
     \centering
     \includegraphics[clip, width=0.3\linewidth]{figures/hit.pdf}
-    \caption{図形に変換しなかった場合のPDF画像}
+    \caption{PDF image when not converted to shape}
     \label{fig: unconverted_pdf}
 \end{figure}
 %%%%%%%%%%%%%%%%%
@@ -91,16 +95,16 @@ PDFは拡大しても画質が劣化しない．
     \centering
     \begin{tabular}{l|cc}
         \toprule
-                                & \textbf{Task A} & \textbf{Task B}  \\ 
+                                & \textbf{Task A} & \textbf{Task B}  \\
         \midrule
-        Number of dense units   & \multicolumn{2}{c}{512, 512, 512} \\ 
-        Activation function     & \multicolumn{2}{c}{Swish} \\ 
-        Input dimension         & 14 & 9 \\ 
-        Output dimension        & 8  & 7 \\ 
-        Number of ensembles     & 5  & 5 \\ 
+        Number of dense units   & \multicolumn{2}{c}{512, 512, 512} \\
+        Activation function     & \multicolumn{2}{c}{Swish} \\
+        Input dimension         & 14 & 9 \\
+        Output dimension        & 8  & 7 \\
+        Number of ensembles     & 5  & 5 \\
         \bottomrule
     \end{tabular}
-    \caption{サンプルの表}
+    \caption{This is the table.}
     \label{tab: sample}
 \end{table}
 %%%%%%%%%%%%%%%%%
@@ -113,16 +117,16 @@ multicolumnを使うと，$512, 512, 512$やSwishのようにセルを結合で�
     \centering
     \begin{tabular}{p{50truemm}|wc{30truemm}wc{30truemm}}
         \toprule
-                                & \textbf{Task A} & \textbf{Task B}  \\ 
+                                & \textbf{Task A} & \textbf{Task B}  \\
         \midrule
-        Number of dense units   & \multicolumn{2}{c}{512, 512, 512} \\ 
-        Activation function     & \multicolumn{2}{c}{Swish} \\ 
-        Input dimension         & 14 & 9 \\ 
-        Output dimension        & 8  & 7 \\ 
-        Number of ensembles     & 5  & 5 \\ 
+        Number of dense units   & \multicolumn{2}{c}{512, 512, 512} \\
+        Activation function     & \multicolumn{2}{c}{Swish} \\
+        Input dimension         & 14 & 9 \\
+        Output dimension        & 8  & 7 \\
+        Number of ensembles     & 5  & 5 \\
         \bottomrule
     \end{tabular}
-    \caption{少し洗練されたサンプルの表}
+    \caption{This is a more sophisticated table.}
     \label{tab: improved_sample}
 \end{table}
 %%%%%%%%%%%%%%%%%

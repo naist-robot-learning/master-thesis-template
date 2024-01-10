@@ -1,9 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ロボットラーニング研究室向け修論テンプレート
-% 
+%
 % 2023.12.18    Ver. 1.1 公開版 (Kwon)
-% 2022.12.21    Ver. 1.2 副査7人まで対応できるように変更 (Kwon)
+% 2023.12.21    Ver. 1.2 副査7人まで対応できるように変更 (Kwon)
+% 2024.01.10    Ver. 1.3 図題と表題を英語に (Kwon)，PDFの見出しの文字化け対応
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -28,6 +29,7 @@
 \usepackage{algorithm, algorithmicx, algpseudocode}             % 疑似コード用．
 \usepackage[nobreak]{cite}                                      % \cite{}を拡張する．
 \usepackage[dvipdfmx]{hyperref}                                 % ハイパーリンク (\hypersetup{}内は設定)
+\usepackage{pxjahyper}                                          % PDF見出しの文字化けを防ぐ
 \hypersetup{setpagesize=false,
  bookmarksnumbered=true,%
  bookmarksopen=true,%
@@ -38,10 +40,11 @@
 % 新しい命令を定義．必要に応じて追加．
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % refまわり
-\newcommand{\figref}[1]{図~\ref{#1}}
-\newcommand{\tabref}[1]{表~\ref{#1}}
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\newcommand{\figureref}[1]{Figure~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
 \newcommand{\equref}[1]{式(\ref{#1})}
-\newcommand{\algoref}[1]{アルゴリズム~\ref{#1}}
+\newcommand{\algoref}[1]{Algorithm~\ref{#1}}
 \newcommand{\secref}[1]{\ref{#1}章}
 \newcommand{\appref}[1]{付録~\ref{#1}}
 % 数式
@@ -75,10 +78,10 @@
 \author{先端 太郎}
 \eauthor{Tarou Sentan}
 % 提出日
-\esyear{2023}
-\jsyear{令和5}
-\smonth{12}
-\sday{16}
+\esyear{2024}
+\jsyear{令和6}
+\smonth{1}
+\sday{30}
 % 指導教員 (8人まで対応)
 \cmembers{松原 崇充}{（情報科学領域　教授）}
          {奈良 二郎}{（情報科学領域　教授）} % 副査1人目
@@ -88,6 +91,7 @@
          {}{} % 副査5人目
          {}{} % 副査6人目
          {}{} % 副査7人目
+
 % キーワード
 \keywords{キーワード (4,5個)}
 \ekeywords{Keywords (4-5 words)}
